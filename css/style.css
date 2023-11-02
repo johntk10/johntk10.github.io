@@ -11,7 +11,7 @@ body {
 }
 
 .NameContainer {
-    border: 5px solid #ccc;
+    border: 5px solid #929292;
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 100px;
@@ -64,29 +64,45 @@ body {
 .About {
     position: absolute;
     top: 100%; /* Push the About section below the viewport */
-    left: 0;
     width: 100%;
     background-color: #000000;
-    border-top: 3px solid #ccc; /* Add a 1px solid border at the top */
+    border-top: 10px solid #929292; /* Add a 1px solid border at the top */
     padding: 50px 0;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-.AboutText {
-    max-width: 800px;
-    margin: 0 auto;
-    font-family: 'Ubuntu', sans-serif;
 }
 
 .About h2 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #ffffff;
     font-size: 2em;
+    text-align: center;
     margin-bottom: 20px;
     text-decoration: underline;
 }
 
-.About p {
-    font-size: 1.5em;
-    color: #333;
+.AboutContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.About p {
+    width: 500px;
+    height: 300px;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1.6em;
+    color: #7c7c7c;
+    line-height: 1.5;
+    float: left;
+    shape-outside: circle(50%);
+}
+
+.About img {
+    width: 18%;
+    height: auto;
+    float: left;
+    margin-right: 2rem;
+    border: 3px solid #b47efc; /* Add a 1px solid border at the top */
+    border-radius: 1000px;
+}
+
 
