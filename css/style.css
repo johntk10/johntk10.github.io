@@ -1,0 +1,92 @@
+body {
+    background-image: url('../images/homepage.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.NameContainer {
+    border: 5px solid #ccc;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+    border-radius: 100px;
+    margin-top: -80px;
+}
+
+.NameHeader h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 8em;
+    text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8);
+    margin: 10px 0;
+    margin-bottom: 30px;
+}
+
+.NameText p {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #d8d6d6;
+    text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    margin: 10px 0;
+}
+
+.Links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.Links a {
+    margin: 0 20px;
+    display: inline-block; /* Make the links behave like blocks */
+}
+
+.Links img {
+    width: 40px;
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+    display: block; /* Remove any extra space below the images */
+}
+
+.Links img:hover {
+    transform: scale(1.5); /* Enlarge the image on hover */
+}
+
+.About {
+    position: absolute;
+    top: 100%; /* Push the About section below the viewport */
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    border-top: 3px solid #ccc; /* Add a 1px solid border at the top */
+    padding: 50px 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.AboutText {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.About h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.About p {
+    font-size: 1.5em;
+    color: #333;
+}
+
