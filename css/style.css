@@ -10,15 +10,46 @@ body {
     color: #fff;
 }
 
+.fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5px 0;
+    text-align: center;
+    z-index: 999; /* Ensure it's on top of other content */
+    border-bottom: 2px solid #ffffff;
+}
+
+.fixed-header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.fixed-header nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.fixed-header nav a {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2em;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
 .NameContainer {
-    border: 5px solid #929292;
+    border: 3px solid rgb(255, 255, 255);
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 100px;
     padding-right: 100px;
     text-align: center;
     border-radius: 100px;
-    margin-top: -80px;
+    margin-top: 0px;
 }
 
 .NameHeader h1 {
@@ -35,7 +66,7 @@ body {
     font-weight: bold;
     font-size: 1.5em;
     color: #d8d6d6;
-    text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8);
+    text-shadow: 4px 4px 12px rgb(0, 0, 0);
     text-align: center;
     margin: 10px 0;
 }
@@ -48,25 +79,25 @@ body {
 
 .Links a {
     margin: 0 20px;
-    display: inline-block; /* Make the links behave like blocks */
+    display: inline-block;
 }
 
 .Links img {
     width: 40px;
-    transition: transform 0.3s ease; /* Add a smooth transition effect */
-    display: block; /* Remove any extra space below the images */
+    transition: transform 0.2s ease;
+    display: block;
 }
 
 .Links img:hover {
-    transform: scale(1.5); /* Enlarge the image on hover */
+    transform: scale(1.5);
 }
 
 .About {
     position: absolute;
-    top: 100%; /* Push the About section below the viewport */
+    top: 100%;
     width: 100%;
-    background-color: #000000;
-    border-top: 10px solid #929292; /* Add a 1px solid border at the top */
+    background-color: #222222;
+    border-top: 10px solid #ffffff; 
     padding: 50px 0;
 }
 
@@ -85,24 +116,37 @@ body {
     justify-content: center;
 }
 
-.About p {
-    width: 500px;
+.AboutContent img {
+    display: block;
+}
+
+.Headshot {
+    width: 20%;
+    border-radius: 1000%;
+}
+
+.UTK {
+    width: 25%;
+}
+
+.AboutContent p {
+    max-width: 500px;
     height: 300px;
     font-family: 'Helvetica', sans-serif;
     font-size: 1.6em;
-    color: #7c7c7c;
+    color: #ffffff;
     line-height: 1.5;
-    float: left;
-    shape-outside: circle(50%);
+    text-align: center;
+    padding-left: 75px;
 }
 
-.About img {
-    width: 18%;
-    height: auto;
-    float: left;
-    margin-right: 2rem;
-    border: 3px solid #b47efc; /* Add a 1px solid border at the top */
-    border-radius: 1000px;
+.AboutSkills h2 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-left: 500px;
+    margin-bottom: 20px;
+    text-decoration: none;
 }
 
 

@@ -8,11 +8,21 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Helvetica">
+    <script src="../js/util.js"></script>
 </head>
 
 <body>
-    <main>
 
+    <header class="fixed-header">
+        <nav>
+            <ul>
+                <a href="javascript:void(0);" onclick="scrollToPosition(0)">Home</a>
+                <a href="javascript:void(0);" onclick="scrollToPosition(631)">About</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
         <div class="NameContainer">
             <div class="NameHeader">
                 <h1>John Kutbay</h1>
@@ -29,11 +39,15 @@
 
     </main>
 
-    <section id="About" class="About">
-        <h2>About Me</h2>
+    <section class="About">
+        <h2>About</h2>
         <div class="AboutContent">
-            <img src="../images/headshot.jpg" alt="Headshot">
+            <img src="../images/headshot.jpg" class="Headshot">
             <p>My name is John Kutbay, and I am a third year student at the University of Tennessee, Knoxville graduating in 2025. I am primarily interested in working as a software engineer, either full-stack or back-end. Additionally, I have experience in data science that I would be interested in applying.</p>
+            <img src="../images/UTK.png" class="UTK">
+        </div>
+        <div class="AboutSkills">
+            <h2>Skills</h2>
         </div>
     </section>
 
