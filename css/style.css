@@ -1,13 +1,6 @@
 body {
-    background-image: url('../images/homepage.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
+    margin: 0;
+    background-color: #1d1d1d;
 }
 
 .fixed-header {
@@ -17,7 +10,6 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 5px 0;
     text-align: center;
-    z-index: 999; /* Ensure it's on top of other content */
     border-bottom: 2px solid #ffffff;
 }
 
@@ -36,20 +28,26 @@ body {
     font-weight: bold;
     text-decoration: none;
     color: #ffffff;
-    font-size: 1.2em;
-    padding: 8px 10px;
+    font-size: 1.6em;
+    padding: 8px 50px;
     border-radius: 5px;
+    transition: color 0.5s;
 }
 
-.NameContainer {
-    border: 3px solid rgb(255, 255, 255);
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 100px;
-    padding-right: 100px;
-    text-align: center;
-    border-radius: 100px;
-    margin-top: 0px;
+.fixed-header nav a:hover {
+    color: rgb(146, 50, 255);
+}
+
+.HomePage {
+    background-image: url('../images/homepage.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
 }
 
 .NameHeader h1 {
@@ -93,20 +91,15 @@ body {
 }
 
 .About {
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    background-color: #222222;
-    border-top: 10px solid #ffffff; 
-    padding: 50px 0;
+    border-top: 5px solid #ffffff;
+    padding-top: 50px;
 }
 
 .About h2 {
     font-family: 'Ubuntu', sans-serif;
     color: #ffffff;
-    font-size: 2em;
+    font-size: 2.5em;
     text-align: center;
-    margin-bottom: 20px;
     text-decoration: underline;
 }
 
@@ -114,6 +107,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 130px;
 }
 
 .AboutContent img {
@@ -123,6 +117,7 @@ body {
 .Headshot {
     width: 20%;
     border-radius: 1000%;
+    border: 2px solid rgb(255, 136, 0);
 }
 
 .UTK {
@@ -131,7 +126,6 @@ body {
 
 .AboutContent p {
     max-width: 500px;
-    height: 300px;
     font-family: 'Helvetica', sans-serif;
     font-size: 1.6em;
     color: #ffffff;
@@ -140,13 +134,96 @@ body {
     padding-left: 75px;
 }
 
+.AboutMore {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.AboutInfo,
+.AboutSkills {
+    flex: 0 0 40%;
+    text-align: center;
+}
+
+.AboutInfo h2,
 .AboutSkills h2 {
     font-family: 'Ubuntu', sans-serif;
     color: #ffffff;
     font-size: 1.5em;
-    margin-left: 500px;
     margin-bottom: 20px;
     text-decoration: none;
 }
 
+.AboutInfo p {
+    font-family: 'Aria', sans-serif;
+    color: #ffffff;
+    text-align: left;
+    font-size: 1.25em;
+    margin: 5px 0;
+    line-height: 45px;
+    margin-left: 46%;
+    font-weight: bold;
+}
 
+.AboutInfo .label {
+    display: inline-block;
+    width: 80px;
+    font-weight: bold;
+    color: rgb(97, 97, 97);
+}
+
+.Skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: -12px;
+    margin-left: 70px;
+}
+
+.SkillName {
+    font-family: 'Ubuntu', sans-serif;
+    color: #ffffff;
+    font-size: 1.25em;
+    margin-right: 50px;
+    width: 120px;
+    text-align: left;
+}
+
+.ProgressBar {
+    background-color: #ddd;
+    height: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 60%;
+    cursor: pointer;
+    position: relative;
+}
+
+.Progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #055e08;
+    height: 100%;
+    width: 80%;
+    border-radius: 5px;
+    transition: width 0.8s ease, background-color 0.3s ease;
+}
+
+.ProgressBar:hover .Progress {
+    background-color: #0ea70e;
+}
+
+.Work {
+    padding-top: 50px;
+    background-color: #1d1d1d;
+}
+
+.Work h2 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #ffffff;
+    font-size: 2.5em;
+    text-align: center;
+    text-decoration: underline;
+}
