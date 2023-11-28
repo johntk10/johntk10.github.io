@@ -107,7 +107,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 130px;
+    margin-bottom: 100px;
 }
 
 .AboutContent img {
@@ -156,7 +156,7 @@ body {
 }
 
 .AboutInfo p {
-    font-family: 'Aria', sans-serif;
+    font-family: 'Arial', sans-serif;
     color: #ffffff;
     text-align: left;
     font-size: 1.25em;
@@ -226,4 +226,72 @@ body {
     font-size: 2.5em;
     text-align: center;
     text-decoration: underline;
+}
+
+.Inteplast {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: -20px;
+}
+
+.InteplastRole h2{
+    font-family: 'Helvetica', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 2.25em;
+    text-decoration: none;
+    text-align: left;
+    margin-left: 450px;
+    line-height: 50px;
+}
+
+.InteplastExtra h2 {
+    font-family: 'Helvetica', sans-serif;
+    color: rgb(179, 179, 179);
+    font-size: 1.7em;
+    text-decoration: none;
+    text-align: left;
+    margin-left: 450px;
+    line-height: 30px;
+}
+
+.InteplastInfo img {
+    margin-top: 60px;
+    margin-left: 450px;
+    border-radius: 1000px;
+    width: 40%;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.InteplastInfo img:hover {
+    transform: scale(1.1);
+}
+
+.InteplastExperience p {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.3em;
+    color: white;
+    margin-left: 150px;
+    margin-top: 150px;
+    border: 2px solid rgba(21,92,170,255);
+    border-radius: 50px;
+    max-width: 600px;
+    padding: 20px;
+    line-height: 40px;
+}
+
+.Projects {
+    margin-top: 150px;
+    padding-top: 50px;
+    background-color: rgb(255, 197, 210);
+}
+
+.Projects h2 {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 2.5em;
+    text-align: center;
+    text-decoration: underline;
+
 }
